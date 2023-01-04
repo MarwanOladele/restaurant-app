@@ -44,8 +44,39 @@
 }
 
 .app__specialMenu_menu_items {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  max-width: 2rem 0;
+  width: 100%;
+}
+
+@media screen and (width < 2000px) {
+  .app__specialMenu-menu_img {
+    width: 650px;
+  }
+
+  .app__specialMenu-menu_img img{
+    height: 920px;
+  }
+}
+@media screen and (width < 1150px) {
+  .app__specialMenu-menu {
     flex-direction: column;
-    max-width: 2rem 0;
+    align-items: center;
     width: 100%;
+  }
+
+  .app__specialMenu-menu_img {
+    margin: 3rem 0;
+  }
+}
+@media screen and (width < 650px) {
+  .app__specialMenu-menu_img {
+    width: 100%;
+  }
+
+  .app__specialMenu_menu_heading {
+    font-size: 35px;
+    line-height: 48.5px;
+  }
 }
